@@ -1,14 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Rocket : MonoBehaviour
 {
     Rigidbody rigidBody;
+    AudioSource rocketThrust;
     // Start is called before the first frame update
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
+        rocketThrust = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,9 +22,12 @@ public class Rocket : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            print("Thrusting");
             rigidBody.AddRelativeForce(Vector3.up);
+            if (!rocketThrust.isPlaying) rocketThrust.Play();
+
         }
+
+        else rocketThrust.Stop();
 
         if (Input.GetKey(KeyCode.D) && ! Input.GetKey(KeyCode.A))
         {
