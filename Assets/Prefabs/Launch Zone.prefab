@@ -127,10 +127,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1497059244014697908}
     m_Modifications:
+    - target: {fileID: 4209979913666063312, guid: 9de21ef902ec70b4bac837e6926eff10,
+        type: 3}
+      propertyPath: m_TagString
+      value: Friendly
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869656387187327074, guid: 9de21ef902ec70b4bac837e6926eff10,
+        type: 3}
+      propertyPath: m_TagString
+      value: Friendly
+      objectReference: {fileID: 0}
     - target: {fileID: 5869656387187327076, guid: 9de21ef902ec70b4bac837e6926eff10,
         type: 3}
       propertyPath: m_Radius
       value: 0.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869656387223771709, guid: 9de21ef902ec70b4bac837e6926eff10,
+        type: 3}
+      propertyPath: m_TagString
+      value: Friendly
       objectReference: {fileID: 0}
     - target: {fileID: 5869656387223771711, guid: 9de21ef902ec70b4bac837e6926eff10,
         type: 3}
@@ -196,6 +211,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Launch Pad
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869656388248831977, guid: 9de21ef902ec70b4bac837e6926eff10,
+        type: 3}
+      propertyPath: m_TagString
+      value: Friendly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9de21ef902ec70b4bac837e6926eff10, type: 3}
